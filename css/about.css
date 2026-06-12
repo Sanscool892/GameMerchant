@@ -1,0 +1,4 @@
+.about-hero img {
+object-fit: cover;  
+max-height: 320px;   
+}
