@@ -1,0 +1,159 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="The Game Merchant's Webpage.">
+    <title>The Game Merchant | Checkout</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">
+            <img src="images/Logo.jpg" alt="logo" width="55">
+        </a>
+        <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+        <label class="menu-button" for="menu-toggle">
+            <img src="img/icon.png" alt="" aria-hidden="true">
+            <span>Menu</span>
+        </label>
+        <nav aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Sets</a>
+            <a class="active" href="checkout.html">Checkout</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+<section>
+<h1>Buying</h1>
+<p>Fill in your details and hit Submit.</p>
+</section>
+
+<section>
+<form action="#" method="post">
+        
+
+        <!-- FIELDSET 1: Account details -->
+        <fieldset>
+          <legend>Username</legend>  <!-- Fieldset title -->
+          <div class="form-grid">
+ 
+            <div class="field-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username"
+                     placeholder="e.g. RebelPilot42" required>
+            </div>
+ 
+            <div class="field-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email"
+                     placeholder="you@rebelbase.com" required>
+            </div>
+ 
+            <div class="field-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+
+            </div>
+ 
+            <div class="field-group">
+              <label for="confirm_password">Confirm Password</label>
+              <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+ 
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Identification</legend>
+          <div class="form-grid">
+ 
+            <div class="field-group">
+             <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name" required>
+            </div>
+ 
+            <div class="field-group">
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name" required>
+            </div>
+ 
+            <div class="field-group full">  
+              <span>Gender</span>           
+              <div class="inline-options">                  
+                <label><input type="radio" name="gender" value="male" required> Man</label>
+                <label><input type="radio" name="gender" value="female"> Woman</label>
+               <label><input type="radio" name="gender" value="other"> No gender</label>
+              </div>
+            </div>
+ 
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Delivery</legend>
+          <div class="form-grid">
+ 
+            <div class="field-group full">
+              <label for="street">Street Address</label>
+              <input type="text" id="street" name="street" required>            </div>
+ 
+            <div class="field-group">
+              <label for="suburb">Suburb</label>
+              <input type="text" id="suburb" name="suburb" required>
+            </div>
+ 
+            <div class="field-group">
+              <label for="postcode">Postcode</label>
+              <input type="text" id="postcode" name="postcode"
+                     pattern="[0-9]{4}" placeholder="4 digits" required>
+              
+            </div>
+ 
+            <div class="field-group">
+              <label for="state">State</label>
+              <select id="state" name="state" required>  <!-- Dropdown list -->
+                <option value="">Select state…</option>   <!-- Empty value = nothing selected -->
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+                <option value="NT">NT</option>
+              </select>
+            </div>
+ 
+            <div class="field-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+ 
+            <div class="field-group full">
+              <label for="order_notes">Order Notes (optional)</label>
+              <textarea id="order_notes" name="order_notes"
+                        placeholder="e.g. Please pack carefully — displaying next to my 
+Millennium Falcon"></textarea>
+            
+            </div>
+ 
+          </div>
+        </fieldset>
+<div class="actions">
+<button type="submit">Order</button>  <!-- Validates then submits -->
+<button type="reset">Cancel</button>    
+</div>
+</form>
+</section>
+</main>
+</body>
+</html>
+    <footer>
+        <p>&copy; 2026 Game Merchant</p>
+    </footer>
+</body>
+</html>
